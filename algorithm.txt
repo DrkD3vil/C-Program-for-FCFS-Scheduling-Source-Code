@@ -1,26 +1,7 @@
-First-Come-First- Served algorithm is the simplest scheduling. According to their arrival time on the ready queue, processes are despatched. Being a nonpreemptive discipline, a process runs till it is finished once it receives a CPU. The FCFS schedule is fair in the sense of formal fairness or human fairness, but it is unjust in the sense that vital jobs must wait while short jobs must wait for long jobs.
+shortage Job First (SJF) Algorithm
 
-Because it offers time, FCFS is more predictable than the majority of other methods. The FCFS method cannot ensure a good response time, making it useless for scheduling interactive users. FCFS scheduling's source code is easy to read and comprehend. This scheme's main flaw is that the average time is frequently rather long.
-
-Advantages of FCFS
-Here, are pros/benefits of using FCFS scheduling algorithm:
-
-The simplest form of a CPU scheduling algorithm
-Easy to program
-First come first served
-Disadvantages of FCFS
-Here, are cons/ drawbacks of using FCFS scheduling algorithm:
-
-It is a Non-Preemptive CPU scheduling algorithm, so after the process has been allocated to the CPU, it will never release the CPU until it finishes executing.
-The Average Waiting Time is high.
-Short processes that are at the back of the queue have to wait for the long process at the front to finish.
-Not an ideal technique for time-sharing systems.
-Because of its simplicity, FCFS is not very efficient.
-Summary:
-
-Definition: FCFS is an operating system scheduling algorithm that automatically executes queued requests and processes by order of their arrival
-It supports non-preemptive and pre-emptive scheduling algorithm.
-FCFS stands for First Come First Serve
-A real-life example of the FCFS method is buying a movie ticket on the ticket counter.
-It is the simplest form of a CPU scheduling algorithm
-It is a Non-Preemptive CPU scheduling algorithm, so after the process has been allocated to the CPU, it will never release the CPU until it finishes executing.
+Take process, arrival time, burst time input from the user.
+Sort the process according to arrival time and if the process has the same arrival time then sort them having less burst time.
+Swap the process one above one in the order of execution.
+Find the turnaround time (tat) and waiting time (wt).
+Find average tat and average wt.
